@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": ["es2017"],
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
