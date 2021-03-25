@@ -1,4 +1,4 @@
-export const stitchTTL = <T extends any[]>(literals: string[], ...substitutions: T) => {
+export const stitchTTL = <T extends any[]>(literals: TemplateStringsArray|string[], ...substitutions: T) => {
   return literals.reduce(
     (result, _, i) => (i >= literals.length - 1 ? result : result + substitutions[i + 1]),
     literals[0]
