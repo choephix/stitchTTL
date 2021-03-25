@@ -1,0 +1,31 @@
+{
+  "name": "stitch-ttl",
+  "version": "0.9.1",
+  "description": "Stitch the arguments of a tagged template literal to a proper string.",
+  "author": "Stefan Ginev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/choephix/stitchTTL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/choephix/stitchTTL/issues"
+  },
+  "homepage": "https://github.com/choephix/stitchTTL#readme",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dryrun": "npm run build && npm publish --dry-run",
+    "release": "npm run build && npm version patch -m \"Bump to v%s\" && npm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "@types/pixi.js": "^5.0.0",
+    "@types/typescript": "^2.0.0",
+    "typescript": "^4.2.3"
+  }
+}
